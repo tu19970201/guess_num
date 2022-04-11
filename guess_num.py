@@ -1,6 +1,10 @@
 import random
+start = input('請決定猜數字範圍最小值：')
+goal = input('請決定最大值：')
+start = int(start)
+goal = int(goal)
 
-r = random.randint(1, 100)
+r = random.randint(start, goal)
 t = 0
 
 while True:
@@ -18,5 +22,5 @@ while True:
         print('終於猜對了！')    
         print('你猜了第', t, '次')
         break
-        
+
     print('你猜了第', t, '次')
